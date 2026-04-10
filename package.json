@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.23",
     "yarn": "^1.22.22"
   },
   "devDependencies": {

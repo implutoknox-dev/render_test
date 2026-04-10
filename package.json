@@ -11,6 +11,7 @@
     "yarn": "^1.22.22"
   },
   "devDependencies": {
-    "esbuild": "^0.28.0"
+    "esbuild": "^0.28.0",
+    "tailwindcss": "^4.2.2"
   }
 }

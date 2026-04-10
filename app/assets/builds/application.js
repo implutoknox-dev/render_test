@@ -8,10 +8,10 @@ var __export = (target, all) => {
     __defProp(target, name, { get: all[name], enumerable: true });
 };
 
-// ../../node_modules/@rails/actioncable/src/adapters.js
+// node_modules/@rails/actioncable/src/adapters.js
 var adapters_default;
 var init_adapters = __esm({
-  "../../node_modules/@rails/actioncable/src/adapters.js"() {
+  "node_modules/@rails/actioncable/src/adapters.js"() {
     adapters_default = {
       logger: typeof console !== "undefined" ? console : void 0,
       WebSocket: typeof WebSocket !== "undefined" ? WebSocket : void 0
@@ -19,10 +19,10 @@ var init_adapters = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/logger.js
+// node_modules/@rails/actioncable/src/logger.js
 var logger_default;
 var init_logger = __esm({
-  "../../node_modules/@rails/actioncable/src/logger.js"() {
+  "node_modules/@rails/actioncable/src/logger.js"() {
     init_adapters();
     logger_default = {
       log(...messages) {
@@ -35,10 +35,10 @@ var init_logger = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/connection_monitor.js
+// node_modules/@rails/actioncable/src/connection_monitor.js
 var now, secondsSince, ConnectionMonitor, connection_monitor_default;
 var init_connection_monitor = __esm({
-  "../../node_modules/@rails/actioncable/src/connection_monitor.js"() {
+  "node_modules/@rails/actioncable/src/connection_monitor.js"() {
     init_logger();
     now = () => (/* @__PURE__ */ new Date()).getTime();
     secondsSince = (time) => (now() - time) / 1e3;
@@ -145,10 +145,10 @@ var init_connection_monitor = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/internal.js
+// node_modules/@rails/actioncable/src/internal.js
 var internal_default;
 var init_internal = __esm({
-  "../../node_modules/@rails/actioncable/src/internal.js"() {
+  "node_modules/@rails/actioncable/src/internal.js"() {
     internal_default = {
       "message_types": {
         "welcome": "welcome",
@@ -172,10 +172,10 @@ var init_internal = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/connection.js
+// node_modules/@rails/actioncable/src/connection.js
 var message_types, protocols, supportedProtocols, indexOf, Connection, connection_default;
 var init_connection = __esm({
-  "../../node_modules/@rails/actioncable/src/connection.js"() {
+  "node_modules/@rails/actioncable/src/connection.js"() {
     init_adapters();
     init_connection_monitor();
     init_internal();
@@ -341,10 +341,10 @@ var init_connection = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/subscription.js
+// node_modules/@rails/actioncable/src/subscription.js
 var extend, Subscription;
 var init_subscription = __esm({
-  "../../node_modules/@rails/actioncable/src/subscription.js"() {
+  "node_modules/@rails/actioncable/src/subscription.js"() {
     extend = function(object, properties) {
       if (properties != null) {
         for (let key in properties) {
@@ -375,10 +375,10 @@ var init_subscription = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/subscription_guarantor.js
+// node_modules/@rails/actioncable/src/subscription_guarantor.js
 var SubscriptionGuarantor, subscription_guarantor_default;
 var init_subscription_guarantor = __esm({
-  "../../node_modules/@rails/actioncable/src/subscription_guarantor.js"() {
+  "node_modules/@rails/actioncable/src/subscription_guarantor.js"() {
     init_logger();
     SubscriptionGuarantor = class {
       constructor(subscriptions) {
@@ -423,10 +423,10 @@ var init_subscription_guarantor = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/subscriptions.js
+// node_modules/@rails/actioncable/src/subscriptions.js
 var Subscriptions;
 var init_subscriptions = __esm({
-  "../../node_modules/@rails/actioncable/src/subscriptions.js"() {
+  "node_modules/@rails/actioncable/src/subscriptions.js"() {
     init_logger();
     init_subscription();
     init_subscription_guarantor();
@@ -504,7 +504,7 @@ var init_subscriptions = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/consumer.js
+// node_modules/@rails/actioncable/src/consumer.js
 function createWebSocketURL(url) {
   if (typeof url === "function") {
     url = url();
@@ -521,7 +521,7 @@ function createWebSocketURL(url) {
 }
 var Consumer;
 var init_consumer = __esm({
-  "../../node_modules/@rails/actioncable/src/consumer.js"() {
+  "node_modules/@rails/actioncable/src/consumer.js"() {
     init_connection();
     init_subscriptions();
     Consumer = class {
@@ -555,7 +555,7 @@ var init_consumer = __esm({
   }
 });
 
-// ../../node_modules/@rails/actioncable/src/index.js
+// node_modules/@rails/actioncable/src/index.js
 var src_exports = {};
 __export(src_exports, {
   Connection: () => connection_default,
@@ -581,7 +581,7 @@ function getConfig(name) {
   }
 }
 var init_src = __esm({
-  "../../node_modules/@rails/actioncable/src/index.js"() {
+  "node_modules/@rails/actioncable/src/index.js"() {
     init_adapters();
     init_connection();
     init_connection_monitor();
@@ -594,7 +594,7 @@ var init_src = __esm({
   }
 });
 
-// ../../node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js
+// node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js
 var turbo_es2017_esm_exports = {};
 __export(turbo_es2017_esm_exports, {
   FetchEnctype: () => FetchEnctype,
@@ -6027,7 +6027,7 @@ if (customElements.get("turbo-stream-source") === void 0) {
 window.Turbo = { ...Turbo, StreamActions };
 start();
 
-// ../../node_modules/@hotwired/turbo-rails/app/javascript/turbo/cable.js
+// node_modules/@hotwired/turbo-rails/app/javascript/turbo/cable.js
 var consumer;
 async function getConsumer() {
   return consumer || setConsumer(createConsumer2().then(setConsumer));
@@ -6044,7 +6044,7 @@ async function subscribeTo(channel, mixin) {
   return subscriptions.create(channel, mixin);
 }
 
-// ../../node_modules/@hotwired/turbo-rails/app/javascript/turbo/snakeize.js
+// node_modules/@hotwired/turbo-rails/app/javascript/turbo/snakeize.js
 function walk(obj) {
   if (!obj || typeof obj !== "object") return obj;
   if (obj instanceof Date || obj instanceof RegExp) return obj;
@@ -6058,7 +6058,7 @@ function walk(obj) {
   }, {});
 }
 
-// ../../node_modules/@hotwired/turbo-rails/app/javascript/turbo/cable_stream_source_element.js
+// node_modules/@hotwired/turbo-rails/app/javascript/turbo/cable_stream_source_element.js
 var TurboCableStreamSourceElement = class extends HTMLElement {
   static observedAttributes = ["channel", "signed-stream-name"];
   async connectedCallback() {
@@ -6100,7 +6100,7 @@ if (customElements.get("turbo-cable-stream-source") === void 0) {
   customElements.define("turbo-cable-stream-source", TurboCableStreamSourceElement);
 }
 
-// ../../node_modules/@hotwired/turbo-rails/app/javascript/turbo/fetch_requests.js
+// node_modules/@hotwired/turbo-rails/app/javascript/turbo/fetch_requests.js
 function encodeMethodIntoRequestBody(event) {
   if (event.target instanceof HTMLFormElement) {
     const { target: form, detail: { fetchOptions } } = event;
@@ -6147,7 +6147,7 @@ function isBodyInit(body) {
   return body instanceof FormData || body instanceof URLSearchParams;
 }
 
-// ../../node_modules/@hotwired/turbo-rails/app/javascript/turbo/index.js
+// node_modules/@hotwired/turbo-rails/app/javascript/turbo/index.js
 window.Turbo = turbo_es2017_esm_exports;
 addEventListener("turbo:before-fetch-request", encodeMethodIntoRequestBody);
 
